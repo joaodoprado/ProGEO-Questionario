@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Avaliativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Questionário Avaliativo</h1>
+    </header>
+    
+    <main>
+        <p>O objetivo do treinamento foi claramente explicado antes da aplicação?</p>
+        <ul class="avaliacao">
+            <li id="q2e1" class="star-icon" data-avaliacao="1" onClick="selecionarEstrela('q2e1')"></li>
+            <li id="q2e2" class="star-icon" data-avaliacao="2" onClick="selecionarEstrela('q2e2')"></li>
+            <li id="q2e3" class="star-icon" data-avaliacao="3" onClick="selecionarEstrela('q2e3')"></li>
+            <li id="q2e4" class="star-icon" data-avaliacao="4" onClick="selecionarEstrela('q2e4')"></li>
+            <li id="q2e5" class="star-icon" data-avaliacao="5" onClick="selecionarEstrela('q2e5')"></li>
+        </ul>
+        <div class="container">
+            <button class="button" data-questao-id="2" data-proxima-pagina="questao03.html">Próxima Página</button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

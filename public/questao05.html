@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Avaliativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Questionário Avaliativo</h1>
+    </header>
+    
+    <main>
+        <p>Você considera que as atividades práticas foram úteis para o aprendizado?</p>
+        <ul class="avaliacao">
+            <li id="q5e1" class="star-icon" data-avaliacao="1" onClick="selecionarEstrela('q5e1')"></li>
+            <li id="q5e2" class="star-icon" data-avaliacao="2" onClick="selecionarEstrela('q5e2')"></li>
+            <li id="q5e3" class="star-icon" data-avaliacao="3" onClick="selecionarEstrela('q5e3')"></li>
+            <li id="q5e4" class="star-icon" data-avaliacao="4" onClick="selecionarEstrela('q5e4')"></li>
+            <li id="q5e5" class="star-icon" data-avaliacao="5" onClick="selecionarEstrela('q5e5')"></li>
+        </ul>
+        <div class="container">
+            <button class="button" data-questao-id="5" data-proxima-pagina="obrigado.html">Concluir</button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

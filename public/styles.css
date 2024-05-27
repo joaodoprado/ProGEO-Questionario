@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+.avaliacao {
+    display: flex;
+    justify-content: center;
+    height: 0px;
+    margin: 0px;
+}
+
+.star-icon {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 50px;
+    height: 0px;
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+    content: "\2606"
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover~.star-icon::before {
+    content: "\2606";
+}
+
+header {
+    background-image: url(../imagens/conexões.jpg);
+    background-position: center center;
+    height: 150px;
+    width: 800px;
+    object-fit: none;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 1px 1px 5px black;
+}
+
+header > h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+
+
+main {
+    background-image: linear-gradient(to right, #191B6B, #0267B2, #191B6B);
+    height: 350px;
+    width: 800px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    margin: auto;
+}
+
+main > p {
+    font-size: 28px;
+    text-indent: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #3d40da;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  top: auto;
+  left: auto;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  #191B6B;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+
+.button:hover {
+    color: #ffffff;
+    &:before {
+      width: 100%;
+    }
+    border: 1px solid white;
+  }
+
+.button {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.container {
+    position: absolute;
+    top: 86%;
+    left: 77%;
+}
+
+body {
+    background-image: url(../imagens/conor-luddy-rN6PPjqru-U-unsplash.jpg);
+    background-size: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
