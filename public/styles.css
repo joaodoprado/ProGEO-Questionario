@@ -10,8 +10,9 @@
 .star-icon {
     list-style-type: none;
     cursor: pointer;
-    font-size: 50px;
     color: #ffe500;
+    font-size: 50px;
+    height: 0px;
 }
 
 .star-icon::before {
@@ -30,9 +31,8 @@
     content: "\2606"; /* Estrelas seguintes vazias ao passar o mouse */
 }
 
-
 header {
-    background-image: url(../imagens/conexões.jpg);
+    background-image: url('./imagens/conexoes.jpg');
     background-position: center center;
     height: 150px;
     width: 800px;
@@ -42,6 +42,7 @@ header {
     box-shadow: 1px 1px 5px black;
 }
 
+
 header > h1 {
     color: #ffffff;
     text-align: center;
@@ -49,7 +50,6 @@ header > h1 {
     font-family: sans-serif;
     font-size: 45px;
 }
-
 
 main {
     background-image: linear-gradient(to right, #191B6B, #0267B2, #191B6B);
@@ -64,26 +64,24 @@ main {
 
 main > p {
     font-size: 28px;
-
     padding-top: 10px;
     padding-left: 5px;
 }
 
 .button {
-  display: inline-block;
-  padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: white;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  top: auto;
-  left: auto;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    top: auto;
+    left: auto;
 }
 
 .button:after {
@@ -95,7 +93,7 @@ main > p {
     height: 100%;
     background-color: darkblue;
     z-index: -2;
-  }
+}
 
 .button:before {
     content: '';
@@ -104,22 +102,23 @@ main > p {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color:  white;
+    background-color: white;
     transition: all .3s;
     z-index: -1;
-  }
+}
 
 .button:hover {
     color: rgba(74, 1, 243, 0.651);
-    &:before {
-      width: 100%;
-    }
-  }
+}
+
+.button:hover:before {
+    width: 100%;
+}
 
 .button {
-  font-family: Arial;
-  text-decoration: none;
-  font-size: 12px;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .container {
@@ -133,8 +132,9 @@ main > p {
     top: 86%;
     left: 83%;
 }
+
 body {
-    background-image: url(../imagens/conor-luddy-rN6PPjqru-U-unsplash.jpg);
+    background-image: url('./imagens/conor-luddy-rN6PPjqru-U-unsplash.jpg');
     background-size: 100%;
     background-position: left center;
     background-repeat: no-repeat;
@@ -144,5 +144,4 @@ body {
     text-align: center;
     position: relative;
     top: 40%;
-    
 }
