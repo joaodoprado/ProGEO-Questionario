@@ -3,11 +3,15 @@ let estrelaSelecionada = null;
 function selecionarEstrela(idEstrela) {
     estrelaSelecionada = idEstrela;
     const allStars = document.querySelectorAll('.star-icon');
+    let found = false;
     allStars.forEach(star => {
         if (star.id === idEstrela) {
-            star.classList.add('ativo');
+            star.classList.add('cheia');
+            found = true;
+        } else if (!found) {
+            star.classList.add('cheia');
         } else {
-            star.classList.remove('ativo');
+            star.classList.remove('cheia');
         }
     });
 }

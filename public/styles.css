@@ -10,26 +10,26 @@
 .star-icon {
     list-style-type: none;
     cursor: pointer;
-    color: #ffe500;
     font-size: 50px;
-    height: 0px;
+    color: #ffe500;
 }
 
 .star-icon::before {
-    content: "\2605";
+    content: "\2606"; /* Estrela vazia */
 }
 
-.star-icon.ativo ~ .star-icon::before {
-    content: "\2606"
+.star-icon.cheia::before {
+    content: "\2605"; /* Estrela cheia */
 }
 
 .avaliacao:hover .star-icon::before {
-    content: "\2605";
+    content: "\2605"; /* Estrela cheia ao passar o mouse */
 }
 
-.star-icon:hover~.star-icon::before {
-    content: "\2606";
+.star-icon:hover ~ .star-icon::before {
+    content: "\2606"; /* Estrelas seguintes vazias ao passar o mouse */
 }
+
 
 header {
     background-image: url(../imagens/conexões.jpg);
